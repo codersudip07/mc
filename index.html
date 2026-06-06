@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ====== CUSTOM CSS ====== -->
+     <link rel="stylesheet" href="style.css">
+    <!-- ====== FONT AWESOME CDN ====== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="./img/logo.png" alt="">
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="right">
+                <p>Dakshinaranjan Das</p>
+                <button><i class="fa-solid fa-power-off"></i></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="./img/avatar.png" alt="">
+            <ul>
+                <li>18842725049</li>
+                <li>Dakshinaranjan Das</li>
+                <li>M002(CA4)-MOCK</li>
+                <li>EXAMINATION SM02</li>
+            </ul>
+            <table>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                </tr><tr>
+                    <td><button>6</button></td>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>10</button></td>
+                </tr>
+                <tr>
+                    <td><button>11</button></td>
+                    <td><button>12</button></td>
+                    <td><button>13</button></td>
+                    <td><button>14</button></td>
+                    <td><button>15</button></td>
+                </tr>
+                <tr>
+                    <td><button>16</button></td>
+                    <td><button>17</button></td>
+                    <td><button>18</button></td>
+                    <td><button>19</button></td>
+                    <td><button>20</button></td>
+                </tr>
+                <tr>
+                    <td><button>21</button></td>
+                    <td><button>22</button></td>
+                    <td><button>23</button></td>
+                    <td><button>24</button></td>
+                    <td><button>25</button></td>
+                </tr>
+            </table>
+        </aside>
+        <section>
+            <nav>
+                <p>Visited <span class="visited">16/25</span></p>
+                <p>Not Visited <span class="not-visited">9</span></p>
+                <p>Review <span class="review">0</span></p>
+                <p>Time Left: <span class="time-left">14 Minutes:42 Second</span></p>
+            </nav>
+            <figure>
+                <button class="check-score">Check Score</button>
+                <div class="parent">
+                    <div class="pukoff">
+                        <img src="./img/pukoff.png" alt="">
+                    </div>
+                    <div class="ranjan">
+                        <img src="./img/ranjan.png" alt="">
+                    </div>
+                </div>
+            </figure>
+        </section>
+    </main>
+
+    <script>
+        const btn = document.querySelector(".check-score");
+        const parent = document.querySelector(".parent");
+        btn.addEventListener("click", () => {
+            parent.style.display = "flex";
+            btn.style.display = "none";
+        })
+    </script>
+</body>
+</html>
